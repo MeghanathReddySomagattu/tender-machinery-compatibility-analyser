@@ -1,0 +1,378 @@
+# CNC Machinery Corpus for Tender Analysis
+
+## 1. SJE 10 LM/XL (CNC Lathe)
+- **Type**: Horizontal 2-axes Turning Centre
+- **Machine Features**:
+  - Powerful AC spindle motor
+  - Step-up Z-axis structure for higher rigidity
+  - High-speed 3500 rpm spindle
+  - Thermally stabilized spindle
+  - Pre-tensioned ball screw support
+  - Heavy-duty bi-directional hydraulic turret (8 stations)
+  - 0.45 sec station-to-station turret indexing time
+  - 100% ball bar tested
+  - Separate coolant tank for easy maintenance
+- **Specifications**:
+  - Maximum Turning Diameter: 350 mm
+  - Maximum Turning Length (from chuck face): 525 mm
+  - Maximum Turning Length: 643 mm
+  - **Spindle**:
+    - Size/Nose: A2-6
+    - Max Bar Capacity: 51 mm
+    - Bore through Spindle: 63 mm
+    - Max Spindle Speed: 3500 rpm
+    - Spindle Motor Power (Fanuc, continuous): 7.5 kW
+    - Spindle Motor Power (Fanuc, 15 min): 11 kW
+    - Spindle Motor Power (Siemens, continuous): 9 kW
+    - Spindle Motor Power (Siemens, S6-25%): 13.5 kW
+    - Spindle Motor Power (Siemens, S6-40%): 11.7 kW
+    - Full Power Range (Fanuc): 1166-2625 rpm
+    - Full Power Range (Siemens): 700-2917 rpm
+    - Standard Chuck Size: 200 mm
+  - **Axes**:
+    - X-Axis Stroke: 180 mm
+    - X-Axis Rapid: 30 m/min (LM) | 20 m/min (HGBT)
+    - X-Axis Guideways: Linear Motion (LM) | Hardened Ground Box Type (HGBT)
+    - Z-Axis Stroke: 643 mm
+    - Z-Axis Rapid: 30 m/min (LM) | 20 m/min (HGBT)
+    - Z-Axis Guideways: LM | HGBT
+  - **Tooling**:
+    - Number of Stations: 8 (12 optional)
+    - Max Boring Bar Diameter: 40 mm (32 mm optional)
+    - OD Turning Tool Size: 25x25 mm (20x20 mm optional)
+  - **Capacity**:
+    - Swing Over Bed: 550 mm
+    - Swing Over Carriage: 260 mm | 310 mm
+  - **Tailstock**:
+    - Base Travel: 410 mm
+    - Quill Travel: 100 mm
+    - Quill Diameter: 80 mm
+    - Quill Taper: MT-4
+  - **Coolant System**:
+    - Coolant Tank Capacity: 150 L
+  - **Hydraulic System**:
+    - Hydraulic Pump Capacity: 14 L/min
+    - Hydraulic Power Pack Tank Capacity: 45 L
+    - System Pressure: 30 kg/cm²
+  - **Operational Requirements**:
+    - Overall Dimensions (LxWxH): 2460 x 1950 x 1740 mm
+    - Overall Weight: ~3625 kg
+    - Power Supply: Not specified (typically 3-phase, 380-415V)
+  - **Material Compatibility**: Suitable for metals like steel, aluminum, and alloys
+  - **Control System**: Fanuc or Siemens, supports G-code programming
+  - **Performance Metrics**:
+    - Accuracy: ±0.005 mm (estimated)
+    - Repeatability: ±0.002 mm (estimated)
+    - Cycle Time: Varies by operation
+  - **Tooling and Fixturing**:
+    - Tool Holder Type: Standard hydraulic turret
+    - Workholding: Chuck, collets, or custom fixtures
+
+## 2. CNC Milling Machines
+- **Type**: Vertical or horizontal CNC milling machines (example: Tormach 1500MX)
+- **Machine Features**:
+  - Servo-driven axes for high precision
+  - Epoxy granite frame for 10x damping vs. cast iron
+  - Automatic tool changer (16-tool capacity)
+  - Wireless probing and tool setting
+  - High-speed spindle for efficient tool paths
+- **Specifications**:
+  - Travels (X/Y/Z): 19.7 x 13.8 x 14 inches (500 x 350 x 356 mm)
+  - Spindle Power: 4 hp (continuous), 6 hp (peak)
+  - Max Spindle Speed: 10,000 rpm
+  - Transmission: Synchronous belt
+  - Spindle Taper: BT30
+  - Max Feed Rate (X/Y, Z): 1200 IPM (30.5 m/min), 600 IPM (15.2 m/min)
+  - Axis Motor: Servo-driven
+  - Power Required: 230V, 30A, single-phase
+  - Table Size: 35 x 12.75 inches (889 x 324 mm)
+  - Table Slots: 5/8 inch (3 slots)
+  - Spindle Nose to Table Max Clearance: 17.7 inches (450 mm)
+  - Spindle Centerline to Column: 14.7 inches (373 mm)
+  - Machine Size: 86 x 104 inches (2184 x 2642 mm)
+  - Overall System Height: 94 inches (2388 mm)
+  - Typical System Weight: 2800 lbs (1270 kg)
+- **Material Compatibility**: Aluminum, steel, titanium, stainless steel, plastics
+- **Control System**: PathPilot (Tormach), supports G-code, conversational programming
+- **Performance Metrics**:
+  - Accuracy: ±0.0005 inches (±0.0127 mm)
+  - Repeatability: ±0.0002 inches (±0.005 mm)
+  - Tool Change Time: ~5 seconds (estimated)
+- **Tooling and Fixturing**:
+  - Tool Holder Type: BT30, CAT, or HSK
+  - Workholding: Vises, clamps, vacuum tables
+- **Operational Requirements**:
+  - Footprint: 86 x 104 inches
+  - Operator Skill: Moderate CNC programming knowledge
+  - Safety Features: Full enclosure, emergency stop
+
+## 3. CNC Lathes and Turning
+- **Type**: Horizontal CNC lathe (example: Tormach 8L)
+- **Machine Features**:
+  - Compact design for prototyping
+  - Rigid tapping and single-point threading
+  - Quick-change tool post
+  - Full enclosure for safety
+- **Specifications**:
+  - Spindle Power: 1.5 hp (1.11 kW)
+  - Spindle Speed: 180 to 5,000 rpm
+  - Through Spindle Bore: 1 inch (26 mm)
+  - Spindle Nose: 5C
+  - Tailstock Taper: MT2
+  - Tailstock Diameter: 0.9 inch (22 mm)
+  - Tailstock Travel: 2.2 inches (55 mm)
+  - X-Axis Travel: 4.5 inches (114 mm)
+  - Z-Axis Travel: 10 inches (254 mm) with tailstock
+  - Max Feed Rate (X, Z): 150 IPM (3.8 m/min)
+  - Axis Drivers: High-performance polyphase stepper motors
+  - Power Requirements: Single-phase 115V, 50/60 Hz, 15A
+  - Machine Footprint: 50 x 26 inches (1270 x 660 mm)
+  - Typical System Weight: 838 lbs (380 kg)
+  - Maximum Swing Over Bed: 8 inches (200 mm)
+  - Maximum Swing Over Carriage: 4 inches (100 mm)
+  - Overall System Height: 52 inches (1321 mm)
+- **Material Compatibility**: Titanium, stainless steel, aluminum, plastics, wood
+- **Control System**: PathPilot, supports G-code, conversational programming
+- **Performance Metrics**:
+  - Accuracy: ±0.0005 inches (±0.0127 mm)
+  - Repeatability: ±0.0002 inches (±0.005 mm)
+- **Tooling and Fixturing**:
+  - Tool Holder Type: Quick-change tool post
+  - Workholding: 3/4-jaw chucks, collets
+- **Operational Requirements**:
+  - Footprint: 50 x 26 inches
+  - Power Consumption: ~1.5 kW
+  - Operator Skill: Basic CNC operation
+
+## 4. Water Jet Cutters
+- **Type**: Abrasive or pure water jet cutter
+- **Machine Features**:
+  - High-pressure water stream with abrasive for hard materials
+  - No heat-affected zones, ideal for heat-sensitive materials
+  - Versatile nozzle for various materials
+- **Specifications**:
+  - Pressure Range: 30,000–90,000 psi (210–620 MPa)
+  - Pump Types: Intensifier, direct drive, or crankshaft pump
+  - Nozzle Material: Tungsten carbide
+  - Jet Speed: ~Mach 3 (2,500 ft/s or 760 m/s)
+  - Kerf Width (Abrasive): 0.04–0.05 inches (1.0–1.3 mm)
+  - Kerf Width (Non-Abrasive): 0.007–0.013 inches (0.18–0.33 mm)
+  - Accuracy: ±0.005 inches (±0.13 mm)
+  - Repeatability: ±0.001 inches (±0.025 mm)
+  - Cutting Capacity (Metals): Up to 6 inches (150 mm)
+  - Cutting Capacity (Most Materials): Up to 18 inches (460 mm)
+  - Nozzle Distance from Workpiece: 0.125 inches (3.2 mm)
+- **Material Compatibility**: Metals, stone, glass, ceramics, rubber, foam, plastics
+- **Control System**: CNC controller, supports G-code
+- **Performance Metrics**:
+  - Cutting Speed: Varies (e.g., 0.72–4.2 in/min for 4-inch aluminum)
+  - Power Consumption: 5–20 kW depending on pump size
+- **Tooling and Fixturing**:
+  - Tooling: Abrasive garnet, no tool changes required
+  - Workholding: Clamps or water tank support
+- **Operational Requirements**:
+  - Footprint: Varies (e.g., 6 x 12 ft for industrial models)
+  - Noise Level: 70–90 dB
+  - Safety Features: Protective enclosures, pressure sensors
+
+## 5. Electrical Discharge Machines (EDM)
+- **Type**: Wire EDM or Sinker EDM
+- **Machine Features**:
+  - Uses electrical sparks to erode material
+  - High precision for complex shapes
+  - No mechanical stress on workpiece
+- **Specifications** (General):
+  - Work Envelope: Up to 20 x 16 x 12 inches (508 x 406 x 305 mm)
+  - Accuracy: ±0.0001 inches (±0.0025 mm)
+  - Surface Finish: Ra 0.1 µm
+  - Max Cutting Speed: 20 in²/hr (129 cm²/hr)
+  - Power Supply: 3-phase, 380V, 10–30 kW
+- **Material Compatibility**: Conductive materials (steel, titanium, carbide)
+- **Control System**: CNC, supports G-code
+- **Performance Metrics**:
+  - Cycle Time: Hours for complex parts
+  - Electrode Wear: Varies by material
+- **Tooling and Fixturing**:
+  - Tooling: Copper or graphite electrodes
+  - Workholding: Magnetic chucks, custom fixtures
+- **Operational Requirements**:
+  - Footprint: ~6 x 8 ft
+  - Operator Skill: Advanced CNC and EDM knowledge
+
+## 6. CNC Drilling Machines
+- **Type**: Vertical or horizontal CNC drilling
+- **Machine Features**:
+  - High-speed drilling for precision holes
+  - Multi-spindle options for efficiency
+  - Automatic tool changers
+- **Specifications** (General):
+  - Work Envelope: Up to 40 x 20 x 20 inches
+  - Spindle Speed: 500–20,000 rpm
+  - Spindle Power: 5–15 hp
+  - Accuracy: ±0.001 inches
+  - Tool Capacity: 10–30 tools
+- **Material Compatibility**: Metals, plastics, composites
+- **Control System**: Fanuc, Siemens, or similar
+- **Performance Metrics**:
+  - Drilling Speed: Up to 100 holes/min
+  - Power Consumption: 5–10 kW
+- **Tooling and Fixturing**:
+  - Tool Holder: BT, CAT, or HSK
+  - Workholding: Vises, clamps
+- **Operational Requirements**:
+  - Footprint: ~5 x 7 ft
+  - Safety Features: Enclosures, interlocks
+
+## 7. Laser Cutters
+- **Type**: CO2 or fiber laser cutters
+- **Machine Features**:
+  - High-speed, non-contact cutting
+  - Minimal material waste
+  - Versatile for thin materials
+- **Specifications** (General):
+  - Work Area: Up to 5 x 10 ft
+  - Laser Power: 500W–6 kW
+  - Cutting Speed: Up to 1000 in/min
+  - Accuracy: ±0.001 inches
+- **Material Compatibility**: Metals, plastics, wood, acrylic
+- **Control System**: CNC, supports G-code
+- **Performance Metrics**:
+  - Kerf Width: 0.005–0.02 inches
+  - Power Consumption: 10–20 kW
+- **Tooling and Fixturing**:
+  - Tooling: Laser beam, no physical tools
+  - Workholding: Vacuum tables, clamps
+- **Operational Requirements**:
+  - Footprint: ~8 x 12 ft
+  - Safety Features: Laser shields, fume extraction
+
+## 8. Plasma Cutters
+- **Type**: CNC plasma cutting
+- **Machine Features**:
+  - High-speed cutting for conductive materials
+  - Cost-effective for thick metals
+  - Portable options available
+- **Specifications** (General):
+  - Work Area: Up to 4 x 8 ft
+  - Cutting Thickness: Up to 2 inches (steel)
+  - Plasma Power: 30–200 amps
+  - Accuracy: ±0.01 inches
+- **Material Compatibility**: Steel, aluminum, copper
+- **Control System**: CNC, supports G-code
+- **Performance Metrics**:
+  - Cutting Speed: Up to 500 in/min
+  - Power Consumption: 5–15 kW
+- **Tooling and Fixturing**:
+  - Tooling: Plasma torch
+  - Workholding: Slatted tables
+- **Operational Requirements**:
+  - Footprint: ~6 x 10 ft
+  - Safety Features: Fume extraction, arc shields
+
+## 9. Flame Cutters
+- **Type**: Oxy-fuel CNC cutting
+- **Machine Features**:
+  - Suitable for thick steel plates
+  - Multiple torches for efficiency
+  - Low operational cost
+- **Specifications** (General):
+  - Work Area: Up to 10 x 40 ft
+  - Cutting Thickness: Up to 12 inches (steel)
+  - Cutting Speed: 10–30 in/min
+  - Accuracy: ±0.03 inches
+- **Material Compatibility**: Carbon steel
+- **Control System**: CNC, supports G-code
+- **Performance Metrics**:
+  - Power Consumption: Minimal (gas-based)
+  - Cycle Time: Slower than plasma
+- **Tooling and Fixturing**:
+  - Tooling: Oxy-fuel torches
+  - Workholding: Slatted tables
+- **Operational Requirements**:
+  - Footprint: ~12 x 50 ft
+  - Safety Features: Gas monitors, fire suppression
+
+## 10. Press Brakes
+- **Type**: CNC hydraulic or mechanical press brake
+- **Machine Features**:
+  - Precision bending of sheet metal
+  - Programmable back gauges
+  - High tonnage for thick materials
+- **Specifications** (General):
+  - Tonnage: 50–500 tons
+  - Bending Length: Up to 12 ft
+  - Accuracy: ±0.01 inches
+  - Stroke Length: 6–12 inches
+- **Material Compatibility**: Steel, aluminum, stainless steel
+- **Control System**: CNC, supports CAD integration
+- **Performance Metrics**:
+  - Bending Speed: 10–20 bends/min
+  - Power Consumption: 10–30 kW
+- **Tooling and Fixturing**:
+  - Tooling: Punches and dies
+  - Workholding: Back gauges, supports
+- **Operational Requirements**:
+  - Footprint: ~6 x 15 ft
+  - Safety Features: Light curtains, guards
+
+## 11. Embroidery Machines
+- **Type**: CNC embroidery
+- **Machine Features**:
+  - Automated stitching for patterns
+  - Multi-needle for color changes
+  - High-speed stitching
+- **Specifications** (General):
+  - Work Area: Up to 20 x 30 inches
+  - Stitching Speed: 500–1200 stitches/min
+  - Needle Count: 6–15 needles
+  - Accuracy: ±0.1 mm
+- **Material Compatibility**: Fabrics, leather
+- **Control System**: CNC, supports design software
+- **Performance Metrics**:
+  - Power Consumption: 1–2 kW
+  - Cycle Time: Varies by pattern
+- **Tooling and Fixturing**:
+  - Tooling: Needles, threads
+  - Workholding: Hoops, frames
+- **Operational Requirements**:
+  - Footprint: ~4 x 4 ft
+  - Operator Skill: Basic design software knowledge
+
+## 12. Multi-Spindle Machines
+- **Type**: CNC multi-spindle drilling or turning
+- **Machine Features**:
+  - Multiple spindles for simultaneous operations
+  - High throughput for mass production
+  - Customizable spindle configurations
+- **Specifications** (General):
+  - Spindle Count: 2–8
+  - Spindle Speed: 500–10,000 rpm
+  - Work Envelope: Varies by model
+  - Accuracy: ±0.005 inches
+- **Material Compatibility**: Metals, plastics
+- **Control System**: CNC, supports G-code
+- **Performance Metrics**:
+  - Cycle Time: Reduced by parallel operations
+  - Power Consumption: 10–20 kW
+- **Tooling and Fixturing**:
+  - Tool Holder: Custom or standard
+  - Workholding: Chucks, fixtures
+- **Operational Requirements**:
+  - Footprint: ~8 x 10 ft
+  - Operator Skill: Advanced CNC programming
+
+## 13. Turret Punchers
+- **Type**: CNC turret punch press
+- **Machine Features**:
+  - High-speed punching for sheet metal
+  - Multiple tool stations
+  - Automated tool changes
+- **Specifications** (General):
+  - Punching Force: 20–50 tons
+  - Work Area: Up to 5 x 10 ft
+  - Accuracy: ±0.004 inches
+  - Tool Stations: 20–60
+- **Material Compatibility**: Steel, aluminum
+- **Control System**: CNC, supports CAD integration
+- **Performance Metrics**:
+  - Punching Speed: 200–1000

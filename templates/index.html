@@ -1,0 +1,130 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container py-5">
+  <!-- Form Card -->
+  <div class="card shadow-sm mb-5 border-0">
+    <div class="card-body p-4">
+      <form method="POST">
+        <div class="mb-4">
+          <label for="tenderInput" class="form-label fw-medium"
+            >Tender Details</label
+          >
+          <textarea
+            id="tenderInput"
+            name="tender"
+            rows="4"
+            placeholder="Paste tender details here..."
+            class="form-control form-control-lg border-light"
+            style="resize: vertical"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-100 fw-medium">
+          <i class="bi bi-search me-2"></i>Analyze Tender
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Results Section -->
+  {% if machines %}
+  <div class="card shadow-sm border-0">
+    <div class="card-body p-4">
+      <h3 class="card-title mb-4 fw-bold text-dark">Analysis Results</h3>
+      <ul class="list-group list-group-flush">
+        {% for m in machines['machines'] %}
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center py-3 px-0 border-0"
+        >
+          <div class="d-flex flex-column">
+            <h5 class="mb-1 fw-semibold">{{ m.name }}</h5>
+            <small class="text-muted"
+              >Confidence Score: {{ m.possibility_score }}%</small
+            >
+          </div>
+          <button
+            class="btn btn-outline-primary btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-{{ loop.index0 }}"
+          >
+            <i class="bi bi-info-circle me-1"></i>View Details
+          </button>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap Modals -->
+  {% for m in machines['machines'] %}
+  <div
+    class="modal fade"
+    id="modal-{{ loop.index0 }}"
+    tabindex="-1"
+    aria-labelledby="modalLabel-{{ loop.index0 }}"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-light border-0">
+          <h5 class="modal-title fw-bold" id="modalLabel-{{ loop.index0 }}">
+            {{ m.name }} - Details
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">{{ m.explanation }}</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %} {% endif %}
+</div>
+
+<!-- Custom Styles -->
+<style>
+  .card {
+    transition: transform 0.2s ease-in-out;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  .list-group-item {
+    transition: background-color 0.2s ease;
+  }
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+  .modal-content {
+    border-radius: 10px;
+  }
+</style>
+
+<!-- Bootstrap Icons CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+/>
+{% endblock %}

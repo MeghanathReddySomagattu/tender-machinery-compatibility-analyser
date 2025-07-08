@@ -1,0 +1,7 @@
+flask
+langchain
+langchain-groq
+langchain-huggingface
+langchain-chroma
+chromadb
+sentence-transformers
