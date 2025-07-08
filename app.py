@@ -10,11 +10,11 @@ from langchain.chains import RetrievalQA
 app = Flask(__name__)
 
 # --- Backend Vector DB / LLM setup ---
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
+groq_api_key = os.environ.get("GROQ_API_KEY")
 embedding_function = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = Chroma(persist_directory="./db", embedding_function=embedding_function)
 llm = ChatGroq(
-    api_key=os.environ["GROQ_API_KEY"],
+    api_key=groq_api_key,
     model_name="gemma2-9b-it",
     temperature=0.7,
     max_tokens=1024
@@ -67,5 +67,6 @@ def index():
         return render_template('index.html', machines=machines, tender=tender_text)
     return render_template('index.html', machines=None)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
